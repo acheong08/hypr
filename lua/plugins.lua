@@ -1,0 +1,7 @@
+hl.config({
+    plugin = {
+        ["split-monitor-workspaces"] = {
+            enable_persistent_workspaces = 0,
+        },
+    },
+})

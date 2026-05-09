@@ -1,0 +1,7 @@
+require("lua.shortcuts.apps")
+require("lua.shortcuts.layout")
+require("lua.shortcuts.workspaces")
+require("lua.shortcuts.monitors")
+require("lua.shortcuts.media")
+require("lua.shortcuts.mouse")
+require("lua.shortcuts.gestures")
