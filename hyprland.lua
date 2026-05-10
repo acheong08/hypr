@@ -1,0 +1,8 @@
+require("lua.debug")
+require("lua.env")
+require("lua.monitors")
+require("lua.devices")
+require("lua.aesthetics")
+require("lua.autostart")
+require("lua.windowrules")
+require("lua.shortcuts")
