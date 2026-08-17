@@ -25,13 +25,13 @@ hl.bind(mod .. " + ALT + down", hl.dsp.window.swap({ direction = "d" }))
 hl.bind(mod .. " + Return", hl.dsp.window.fullscreen_state({ internal = 0, client = 3, action = "toggle" }))
 hl.bind(mod .. " + SHIFT + Return", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 
--- Scrolling layout messages
-hl.bind(mod .. " + slash", hl.dsp.layout("promote"))
-hl.bind(mod .. " + period", hl.dsp.layout("swapcol r"))
-hl.bind(mod .. " + comma", hl.dsp.layout("swapcol l"))
-hl.bind(mod .. " + J", hl.dsp.layout("consume l"))
-hl.bind(mod .. " + K", hl.dsp.layout("consume r"))
+-- Dwindle layout messages
+hl.bind(mod .. " + slash", hl.dsp.layout("movetoroot"))
+hl.bind(mod .. " + period", hl.dsp.layout("rotatesplit 90"))
+hl.bind(mod .. " + comma", hl.dsp.layout("rotatesplit -90"))
+hl.bind(mod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mod .. " + K", hl.dsp.window.pseudo())
 
--- Cycle focus through columns (ALT+Tab)
-hl.bind("ALT + Tab", hl.dsp.layout("focus r"))
-hl.bind("ALT + SHIFT + Tab", hl.dsp.layout("focus l"))
+-- Cycle focus through windows (ALT+Tab)
+hl.bind("ALT + Tab", hl.dsp.window.cycle_next({ next = true }))
+hl.bind("ALT + SHIFT + Tab", hl.dsp.window.cycle_next({ next = false }))

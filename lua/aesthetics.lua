@@ -9,7 +9,7 @@ hl.config({
 			inactive_border = "rgba(595959aa)",
 		},
 
-		layout = "scrolling",
+		layout = "dwindle",
 	},
 
 	decoration = {
@@ -34,9 +34,8 @@ hl.config({
 		font_family = "JetBrainsMono Nerd Font",
 	},
 
-	scrolling = {
-		column_width = 0.98,
-		follow_min_visible = 0.75,
-		focus_fit_method = 1,
+	dwindle = {
+		-- keep split orientation stable; required for `togglesplit`
+		preserve_split = true,
 	},
 })
